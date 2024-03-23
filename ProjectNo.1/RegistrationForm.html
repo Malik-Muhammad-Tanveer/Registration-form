@@ -8,33 +8,51 @@
 </head>
 <body>
 <!-- Resigtration Form -->
-    <form action="/Done.html">
+    <form action="./CSS/Done.html">
     <fieldset>
         <legend>Name and Address</legend>
         <label>Do you use CiviCRM?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="radio" disabled>Yes<input type="radio" disabled>No &nbsp;&nbsp; 
+            <input type="radio" name="CiviCRM">
+            <label for="yes">Yes</label>
+            <input type="radio" name="CiviCRM">
+            <label for="no">No</label> &nbsp;&nbsp; 
             (&nbsp;<u style="color: blue;">unselect</u>&nbsp;)
         </label><br>
         <label>How long have you been using<br>CiviCRM?&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
             &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
             &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-           <select class="dd1">
+           <select class="dd1" required>
             <option>- select -</option>
+            <option>One Year</option>
+            <option>Two years</option>
+            <option>Three years</option>
            </select>
         </label><br><br>
         <label>
             Which CMS do you use? &nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <select class="dd2">
+            <select class="dd2" required>
                 <option>- select -</option>
+                <option>WordPress</option>
+                <option>Joomla</option>
+                <option>Drupal</option>
+                <option>Shopify</option>
+                <option>Magento</option>
+                <option>WooCommerce</option>
+                <option>SharePoint</option>
+                <option>Alfresco</option>
                </select>
         </label><br><br>
         <label>
             Your skill set&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <select class="dd3">
+            <select class="dd3" required>
                 <option>- select -</option>
+                <option>SEO Optamization</option>
+                <option>Content Management</option>
+                <option>Customer Insights</option>
+                <option>Integration Skills</option>
                </select>
         </label><br><br>
         <label>
@@ -42,19 +60,19 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="email">
+            <input type="email" required>
         </label>
         <label><br><br>
             First Name *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text">
+            <input type="text" required>
         </label>
         <label><br><br>
             Last Name *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text"><br><br>
+            <input type="text" required><br><br>
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
@@ -64,25 +82,29 @@
         <label>
             Street Address (Home)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input class="street" type="text">
+            <input class="street" type="text" required>
         </label><br><br>
         <label>
             City (Home)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input class="city" type="text">
+            <input class="city" type="text" required>
         </label><br><br>
         <label>
             Postal Code (Home)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;<input class="postal" type="number">
+            &nbsp;&nbsp;&nbsp;<input class="postal" type="number" required>
         </label><br><br>
         <label>
             Country (Home)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;
-            <select class="dd4">
+            <select class="dd4" required>
                 <option>United States</option>
+                <option>Pakistan</option>
+                <option>London</option>
+                <option>Newyork</option>
+                <option>Denmark</option>
             </select><br><br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -100,8 +122,12 @@
                 State (Home)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <select class="dd5">
+                <select class="dd5" required>
                     <option>- select -</option>
+                    <option>Mianwali</option>
+                    <option>Islamabad</option>
+                    <option>Karachi</option>
+                    <option>Lahore</option>
                 </select>
             </label>
     </fieldset>
